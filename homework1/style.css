@@ -8,12 +8,9 @@ header {
 	background-color: blue;	
 }
 
-.header-logo {
-	color: white;
-	margin: 0;
-	padding: 0;
-	font-size: 1.5em;
-	font-weight: 900;
+.header-logo img {
+	width: 7em;
+	height: 2em;
 }
 .nav {
 	color: white;
@@ -143,11 +140,11 @@ header hr {
 
 .block-icons {
 	text-align: center;
-	border-top: solid;
-	border-bottom: solid;
+	border: solid;
 	color: #e4e4e4;
 	margin-top: 3.5em;
 	margin-bottom: 5.5em;
+	height: 350px;
 }
 
 .block-icons:hover {
@@ -194,8 +191,8 @@ header hr {
 .list {
 	display: flex;
 	justify-content: space-between;
-	height: 24px;
-	line-height: 24px;
+	height: 20px;
+	line-height: 20px;
 	margin: 1rem 0;
 }
 
@@ -269,46 +266,50 @@ header hr {
 	width: 100%;
 	height: 16em;
 	background-color: #855f5f;
-	border: solid;
-	color: #855f5f;
 	margin-top: 3em;
 }
 
-.pictures1:hover {
-	background-color: #648cc0;
-	border: 10px solid;
-	color: #855f5f;
+.pictures1 img {
+	width: 100%;
+	height: 100%;
+}
+.pictures1 img:hover {
+	width: 105%;
+	height: 105%;
 }
 
 .pictures2 {
 	width: 100%;
 	height: 35em;
 	background-color: #855f5f;
-	border: solid;
-	color: #855f5f;
 	margin-top: 1.5em;
 }
 
-.pictures2:hover {
-	background-color: #648cc0;
-	border: 10px solid;
-	color: #855f5f;
+.pictures2 img {
+	width: 100%;
+	height: 100%;
 }
 
+.pictures2 img:hover {
+	width: 102%;
+	height: 102%;
+}
 
 .pictures3 {
 	width: 100%;
 	height: 16em;
 	background-color: #855f5f;
-	border: solid;
-	color: #855f5f;
 	margin-top: 1.5em;
 }
 
-.pictures3:hover {
-	background-color: #648cc0;
-	border: 10px solid;
-	color: #855f5f;
+.pictures3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.pictures3 img:hover {
+	width: 105%;
+	height: 105%;
 }
 
 .our-portfolio .btn {
@@ -336,4 +337,71 @@ header hr {
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+}
+
+	/* section-call-to-action */
+
+.call-to-action {
+	background-color: #e97289;
+	padding: 6em 0;
+}
+
+.call-to-action p {
+	color: #ffffff;
+	font-size: 1.8em;
+	font-family: 'Raleway';
+}
+
+.call-to-action .btn {
+	width: 10em;
+	height: 3em;
+}
+
+	/* section-our-services */
+
+.our-services {
+	padding: 6em 0;
+}
+
+.our-services h3 {
+	padding-bottom: 1.5em;
+}
+
+.our-services .text1 {
+	border: solid;
+	color: #e4e4e4;
+	padding: 2em 2em 0 2em;
+}
+
+.our-services .text1 p {
+	color: #707070;
+	font-family: 'Lato', sans-serif;
+}
+
+.our-services .bg1 {
+	position: relative;
+	bottom: -1.5em;
+}
+
+.our-services .webstrot {
+	position: relative;
+	bottom: -1em;
+}
+
+.our-services .bg2 {
+	position: relative;
+	bottom: -1.7em;
+	left: 1.8em;
+}
+
+.our-services .text2 {
+	border: solid;
+	color: #e4e4e4;
+	
+}
+
+.our-services .nav {
+	border: solid;
+	color: #e4e4e4;
+	
 }
