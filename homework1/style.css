@@ -1,16 +1,24 @@
 body {
 	font-family: 'Roboto';
+	max-width: 100%;
+}
+
+html, body {
+	overflow-x: hiddens;
 }
 
 	/* header  */
 
 header {
 	background-color: blue;	
+	width: 100%;
+	max-width: 100%;
 }
 
 .header-logo img {
 	width: 7em;
 	height: 2em;
+	max-width: 100%;
 }
 .nav {
 	color: white;
@@ -19,14 +27,36 @@ header {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 	
 }
+
+.nav li {
+	list-style: none;
+}
+
 .nav-menu {
 	font-size: .8em;
 	font-weight: 900;
 }
 .nav-menu:hover {
 	color: rgb(226, 123, 123);
+}
+
+.burger {
+	cursor: pointer;
+}
+
+.line {
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: #fff;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-o-transition: all .4s ease;
 }
 
 .button {
@@ -36,7 +66,9 @@ header {
 	text-align: center;
 	width: 6em;
 	height: 20px;
+	max-width: 100%;
 	line-height: 20px;
+	padding: 0 1rem;
 	border-radius: 5px;
 	box-shadow: 0px 0px 2px 1px white;
 	display: flex;
@@ -55,6 +87,7 @@ header .fa {
 .search-top {
 	width: 45px;
 	height: 45px;
+	max-width: 100%;
 	border-radius: 50%;
 	color: white;
 	line-height: 45px;
@@ -108,6 +141,7 @@ header hr {
 
 .welcom-text hr {
 	width: 10em;
+	max-width: 100%;
 	background-color: #30a3f0;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
@@ -123,6 +157,7 @@ header hr {
 
 .apple-image img {
 	width: 100%;
+	max-width: 100%;
 	padding-top: 2rem;
 	font-weight: 100;
 }
@@ -153,6 +188,12 @@ header hr {
 	color: #30a3f0;
 }
 
+@media only screen and (max-width: 768px) {
+	.block-icons {
+		margin: 1em 0;
+	}
+}
+
 .block-icons .icons {
 	padding-top: 3em;
 	padding-bottom: 2.5em;
@@ -174,6 +215,12 @@ header hr {
 	background-color: #fafafa;
 }
 
+@media only screen and (max-width: 768px) {
+	.about-us {
+		margin-top: 1em;
+	}
+}
+
 .about-us h2 {
 	padding-top: 6rem;
 	padding-bottom: 2.5rem;
@@ -187,6 +234,7 @@ header hr {
 .bg-image img {
 	width: 100%;
 	height: 724px;
+	max-width: 100%;
 	padding-right: 3rem;
 }
 
@@ -198,12 +246,20 @@ header hr {
 	margin: 1rem 0;
 }
 
+@media only screen and (max-width: 515px) {
+	.list  {
+		margin: 1.8rem 0;
+	}
+}
+
 .list p {
 	padding-left: 10px;
+	word-wrap: break-word;
 }
 
 .about-us .btn {
 	width: 10rem;
+	max-width: 100%;
 	margin-top: 2.5rem;
 	margin-bottom: 6rem;
 }
@@ -225,6 +281,7 @@ header hr {
 
 .our-portfolio hr {
 	width: 10em;
+	max-width: 100%;
 	background-color: #30a3f0;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
@@ -245,6 +302,7 @@ header hr {
 .portfolio-nav {
 	width: 5em;
 	height: 2em;
+	max-width: 100%;
 	line-height: 2em;
 	margin: 0 10px;
 	text-align: center;
@@ -261,6 +319,7 @@ header hr {
 
 .hr2 hr {
 	width: 100%;
+	max-width: 100%;
 	background-color: #e4e4e4;
 	margin: 0;
 	padding: 0;
@@ -269,6 +328,7 @@ header hr {
 .pictures1 {
 	width: 100%;
 	height: 16em;
+	max-width: 100%;
 	background-color: #855f5f;
 	margin-top: 3em;
 }
@@ -276,15 +336,18 @@ header hr {
 .pictures1 img {
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 }
 .pictures1 img:hover {
 	width: 105%;
 	height: 105%;
+	max-width: 100%;
 }
 
 .pictures2 {
 	width: 100%;
 	height: 35em;
+	max-width: 100%;
 	background-color: #855f5f;
 	margin-top: 1.5em;
 }
@@ -292,16 +355,19 @@ header hr {
 .pictures2 img {
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 }
 
 .pictures2 img:hover {
 	width: 102%;
 	height: 102%;
+	max-width: 100%;
 }
 
 .pictures3 {
 	width: 100%;
 	height: 16em;
+	max-width: 100%;
 	background-color: #855f5f;
 	margin-top: 1.5em;
 }
@@ -309,15 +375,18 @@ header hr {
 .pictures3 img {
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 }
 
 .pictures3 img:hover {
 	width: 105%;
 	height: 105%;
+	max-width: 100%;
 }
 
 .our-portfolio .btn {
 	width: 10rem;
+	max-width: 100%;
 	margin-top: 3.5em;
 	margin-bottom: 6em;
 }
@@ -328,6 +397,7 @@ header hr {
 	background-image: url(image/bg-img2.jpg);
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 	padding: 15em 0;
 }
 .section-video h1 {
@@ -359,6 +429,7 @@ header hr {
 .call-to-action .btn {
 	width: 10em;
 	height: 3em;
+	max-width: 100%;
 }
 
 	/* section-services */
@@ -372,10 +443,22 @@ header hr {
 	font-weight: 600;
 }
 
+@media only screen and (max-width: 992px) {
+	.services h3 {
+		padding-top: 1.5em;
+	}
+}
+
 .services .testimonials {
 	border: 2px solid;
 	color: #e4e4e4;
 	padding: 2em 2em 0 2em;
+}
+
+@media only screen and (max-width: 992px) {
+	.services .testimonials {
+		margin-bottom: 2em;
+	}
 }
 
 .services .text {
@@ -403,8 +486,7 @@ header hr {
 
 .services .our-services {
 	border: 2px solid;
-	color: #e4e4e4;
-	height: 252px;	
+	color: #e4e4e4;	
 }
 
 .services .tabs {
@@ -413,6 +495,7 @@ header hr {
 	background-color: #fafafa;
 	width: 134px;
 	height: 3em;
+	max-width: 100%;
 	line-height: 3em;
 	text-align: center;
 	margin-bottom: 2.5em;
@@ -421,6 +504,12 @@ header hr {
 .services .tabs:hover {
 	color: #ffffff;
 	background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+	.services .tabs {
+		margin-bottom: 0;
+	}
 }
 
 .tabs p {
@@ -439,10 +528,18 @@ header hr {
 
 .our-services img {
 	margin-left: 2em;
+	margin-top: 2em;
 }
 
 .our-services .text {
 	padding-right: 1.5em;
+	margin-top: 2em;
+}
+
+@media only screen and (max-width: 490px) {
+	.our-services .text {
+		margin-left: .5em;
+	}
 }
 
 	/* section-our-team */
@@ -460,6 +557,7 @@ header hr {
 
 .our-team hr {
 	width: 10em;
+	max-width: 100%;
 	background-color: #30a3f0;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
@@ -496,10 +594,17 @@ header hr {
 }
 
 .our-team .icons {
-	width: 8em;
+	width: 6em;
+	max-width: 100%;
 	position: relative;
 	top: -4.5em;
-	left: 1.5em;
+	left: 3em;
+}
+
+@media only screen and (min-width: 992px) {
+	.our-team .icons {
+		left: 4.5em;
+	}
 }
 
 .our-team .icons .fa {
@@ -512,6 +617,7 @@ header hr {
 .our-team .separator {
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
 	background-color: #e4e4e4;
 	margin: 3em 0;
 
@@ -529,8 +635,10 @@ header hr {
 
 .more-features .ipad img {
 	max-width: 100%;
-	border-radius: 50%;
-	background-color: #30a3f0;
+	height: 500px;
+	position: relative;
+	left: 50px;
+	top: 40px;
 }
 
 .more-features .icons img {
@@ -541,6 +649,12 @@ header hr {
 	padding: 1em 1em;
 }
 
+@media only screen and (max-width: 992px) {
+	.more-features .slider {
+		margin-top: 2em;
+	}
+}
+
 .more-features .slider h5 {
 	color: #ffffff;
 	padding-bottom: 1rem;
@@ -548,6 +662,16 @@ header hr {
 
 .more-features .slider p {
 	color: #cadbf8;
+}
+
+@media only screen and (max-width: 1200px) {
+	.more-features .slider h5 {
+		padding-bottom: .5rem;
+	}
+
+	.more-features .slider {
+		padding-bottom: 0;
+	}
 }
 
 	/* section-pricing-plans */
@@ -563,6 +687,7 @@ header hr {
 	
 	.pricing-plans hr {
 		width: 10em;
+		max-width: 100%;
 		background-color: #30a3f0;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
@@ -593,9 +718,22 @@ header hr {
 
 	.pricing-plans .price-st p {
 		color: #ffffff;
-		font-size: 2em;
+		font-size: 4em;
 		text-align: center;
 		padding: 1rem 0;
+	}
+
+	.pricing-plans .price-st p::before {
+		content: '$';
+		font-size: 2rem;
+		position: relative;
+		top: -25px;
+		right: 5px;
+	}
+
+	.pricing-plans .price-st p::after {
+		content: '/month';
+		font-size: 1rem;
 	}
 
 	.pricing-plans .price-pr {
@@ -603,11 +741,71 @@ header hr {
 		padding: 3em 6em;
 	}
 
+	.pricing-plans .price-pr .best-seller {
+		background-color: #f5f5f5;
+		color: #000000;
+		width: 140px;
+		height: 24px;
+		max-width: 100%;
+		line-height: 24px;
+		font-size: .8rem;
+		transform: rotate(90deg);
+		position: absolute;
+		top: 52px;
+		right: 10px;
+	}
+
+	@media only screen and (max-width: 992px) {
+		.pricing-plans .price-pr .best-seller {
+			margin-top: 1em;
+		}
+	}
+
+	.pricing-plans .price-pr .best-seller::before {
+		position: absolute;
+		content: '';
+		width: 0;
+		height: 0;
+		right: 133px;
+		top: -6px;
+		border-width: 3px;
+			border-top-width: initial;
+			border-right-width: initial;
+			border-bottom-width: initial;
+			border-left-width: initial;
+		border: solid #3a2b2b00;
+			border-top-color: rgba(58, 43, 43, 0);
+			border-top-style: solid;
+			border-top-width: initial;
+			border-right-color: #cdcdcd;
+			border-right-style: solid;
+			border-right-width: initial;
+			border-bottom-color: #cdcdcd;
+			border-bottom-style: solid;
+			border-bottom-width: initial;
+			border-left-color: rgba(58, 43, 43, 0);
+			border-bottom-style: solid;
+			border-bottom-width: initial;
+	}
+
 	.pricing-plans .price-pr p {
 		color: #ffffff;
-		font-size: 2em;
+		font-size: 4em;
 		text-align: center;
 		padding: 1rem 0;
+	}
+
+	.pricing-plans .price-pr p::before {
+		content: '$';
+		font-size: 2rem;
+		position: relative;
+		top: -25px;
+		right: 5px;
+	}
+
+	.pricing-plans .price-pr p::after {
+		content: '/month';
+		font-size: 1rem;
 	}
 
 	.pricing-plans .price-ul {
@@ -617,13 +815,27 @@ header hr {
 
 	.pricing-plans .price-ul p {
 		color: #ffffff;
-		font-size: 2em;
+		font-size: 4em;
 		text-align: center;
 		padding: 1rem 0;
 	}
 
+	.pricing-plans .price-ul p::before {
+		content: '$';
+		font-size: 2rem;
+		position: relative;
+		top: -25px;
+		right: 5px;
+	}
+
+	.pricing-plans .price-ul p::after {
+		content: '/month';
+		font-size: 1rem;
+	}
+
 	.pricing-plans .btn {
 		width: 9.5em;
+		max-width: 100%;
 	}
 
 	.pricing-plans .price-text {
@@ -644,12 +856,19 @@ header hr {
 		border: #e97289 2px solid;
 	}
 
+	@media only screen and (max-width: 992px) {
+		.pricing-plans .price {
+			margin-top: 1em;
+		}
+	}
+
 	/* section-contact-us */
 
 	.contact-us {
 		background-color: #1a1a1a;
 		text-align: center;
 		padding-top: 6em;
+		max-width: 100%;
 	}
 
 	.contact-us h3 {
@@ -664,6 +883,7 @@ header hr {
 	
 	.contact-us hr {
 		width: 10em;
+		max-width: 100%;
 		background-color: #30a3f0;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
@@ -680,6 +900,11 @@ header hr {
 	.contact-us .logos {
 		padding-top: 4em;
 		padding-bottom: 6em;
+	}
+
+	.contact-us .logos img {
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.contact-us .full-name {
@@ -744,6 +969,12 @@ header hr {
 		padding-bottom: 1.5em;
 	}
 
+	@media only screen and (max-width: 992px) {
+		.contact-us .message {
+			margin-top: 2em;
+		}
+	}
+
 	.contact-us .message p {
 		text-align: left;
 		padding-left: 1rem;
@@ -752,6 +983,7 @@ header hr {
 	.contact-us .message .question {
 		width: 18px;
 		height: 18px;
+		max-width: 100%;
 		font-size: 12px;
 		color: #000000;
 		background-color: #707070;
@@ -819,8 +1051,15 @@ header hr {
 	.footer-bottom .icons-footer .fa {
 		width: 35px;
 		height: 35px;
+		max-width: 100%;
 		line-height: 35px;
 		background-color: #181818;
 		border-radius: 50%;
 		text-align: center;
+	}
+
+	@media only screen and (max-width: 992px) {
+		.footer-bottom .icons-footer {
+			margin-top: 1em;
+		}
 	}
