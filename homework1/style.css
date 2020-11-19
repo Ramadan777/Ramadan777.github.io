@@ -187,13 +187,20 @@ header hr {
 	border: solid;
 	color: #30a3f0;
 }
-
+.burger {
+	display: none;
+}
 @media only screen and (max-width: 768px) {
 	.block-icons {
 		margin: 1em 0;
 	}
 }
-
+.nav-menu {
+	display: none;
+}
+.burger {
+	display: block
+}
 .block-icons .icons {
 	padding-top: 3em;
 	padding-bottom: 2.5em;
